@@ -87,7 +87,7 @@ class MainWindow(QMainWindow):
             line_count = 1
         height = self.ui.prompt_input.fontMetrics().lineSpacing() + 2  # 字体每一行的高度
         # self.ui.prompt_input.setMinimumHeight(row_count * height)
-        h = line_count * height + 76
+        h = line_count * height + 80
         self.ui.prompt_container.setMaximumHeight(h)
         self.ui.prompt_container.setMinimumHeight(h)
 

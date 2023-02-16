@@ -24,7 +24,7 @@ class Ui_q_item(object):
     def setupUi(self, q_item):
         if not q_item.objectName():
             q_item.setObjectName(u"q_item")
-        q_item.resize(800, 72)
+        q_item.resize(800, 109)
         q_item.setMinimumSize(QSize(0, 0))
         q_item.setStyleSheet(u"QWidget{\n"
 "	background-color: rgb(52, 53, 65);\n"
@@ -79,6 +79,9 @@ class Ui_q_item(object):
         self.question.setObjectName(u"question")
         self.question.setMinimumSize(QSize(700, 0))
         self.question.setMaximumSize(QSize(1000, 16777215))
+        font = QFont()
+        font.setPointSize(10)
+        self.question.setFont(font)
         self.question.setAcceptDrops(False)
         self.question.setStyleSheet(u"QTextBrowser{\n"
 "	color: rgb(255, 255, 255);\n"
